@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "leaflet/dist/leaflet.css";
+@import "swiper/swiper-bundle.css";
+
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff;
+  --font-roboto-slab: "Roboto Slab", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white!important;
+  width: 20px !important;
+  height: 20px !important;
+  display: none !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.swiper-pagination{
+  display: none !important;
 }
+.swiper-slide {
+  transition: all 0.3s ease !important;
+  transform: scale(0.9) !important;
+  opacity: 0.7 !important;
+}
+
+.swiper-slide-active {
+  transform: scale(1.12) !important;
+  opacity: 1 !important;
+}
+
