@@ -3,7 +3,7 @@ import { Button } from "@/shared/components/Button";
 import { TitleSection } from "@/shared/components/TitleSection";
 import * as React from "react";
 import { hotels } from "../../constants/hotels";
-
+import Link from "next/link";
 
 const TopRating: React.FC = () => {
   return (
@@ -35,13 +35,17 @@ const TopRating: React.FC = () => {
                 </span>
               </div>
 
-              <Button className="mt-4 text-secondary-06" type="bg_transparant">Book Now</Button>
+              <Button className="mt-4 text-secondary-06" type="bg_transparant">
+                <Link href="/search-results">Booking Now</Link>
+              </Button>
             </div>
           </div>
         ))}
       </div>
       <div className="text-center mt-8">
-        <Button className="text-white" type="primary_filled">View More</Button>
+        <Button className="text-white" type="primary_filled">
+          View More
+        </Button>
       </div>
     </div>
   );
