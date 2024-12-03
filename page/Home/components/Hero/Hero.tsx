@@ -13,7 +13,7 @@ const HeroCarousel = () => {
     "/images/hero7.jpg",
     "/images/hero8.jpg",
     "/images/hero9.jpg",
-    "/images/hero11.jpg",
+    "/images/hero8.jpg",
   ];
 
   const handleScroll = () => {
