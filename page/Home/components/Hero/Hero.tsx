@@ -1,7 +1,6 @@
 
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
 import { Button } from "@/shared/components/Button";
 import Link from "next/link";
 import { BookingBar } from "@/shared/components/BookingBar";

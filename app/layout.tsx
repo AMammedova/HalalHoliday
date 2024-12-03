@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Header } from "@/shared/components/Header";
 import { Footer } from "@/shared/components/Footer";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("@/shared/components/Header"), {
+  ssr: false,
+});
+
 
 export const revalidate = 0;
 const poppins = localFont({
